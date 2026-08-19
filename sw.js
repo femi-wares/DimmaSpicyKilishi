@@ -1,5 +1,5 @@
 const CACHE = "dimma-v2";
-const ASSETS = ["./index.html", "./styles.css", "./app.js", "./manifest.json", "./icon.svg" , "./kilishi8.jpg"];
+const ASSETS = ["./index.html", "./styles.css", "./app.js", "./manifest.json", "./kilishi8.jpg"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
